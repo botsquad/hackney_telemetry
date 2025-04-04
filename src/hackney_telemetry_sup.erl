@@ -17,7 +17,7 @@
 
 start_link() -> supervisor:start_link({local, ?SERVER}, ?MODULE, []).
 
--define(PER_HOST, [nb_requests, request_time, connect_time, response_time, connect_timeout, connect_error]).
+-define(PER_HOST, [nb_requests, request_time, connect_time, response_time, connect_timeout, connect_error, status_code]).
 
 init([]) ->
   SupFlags = #{strategy => one_for_one, intensity => 0, period => 1},

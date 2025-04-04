@@ -34,6 +34,7 @@ The following metrics are exported by this library to telemetry.
 | `hackney_host.response_time`   | host | Response time per host                                |
 | `hackney_host.connect_timeout` | host | Number of connect timeout per host                    |
 | `hackney_host.connect_error`   | host | Number of timeout errors per host                     |
+| `hackney_host.status_code`     | host | HTTP response status code per host                    |
 
 This module implements all the callbacks required by `hackney_metrics` but it does
 not support host metrics.
